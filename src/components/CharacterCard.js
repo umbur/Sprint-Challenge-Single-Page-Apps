@@ -5,7 +5,8 @@ const CharacterDiv = styled.div`
 `;
 
 export default function CharacterCard (props) {
-  let character = props.character;
+  //let character = props.character;
+  const { character } = props;
   return (
       <CharacterDiv>
         <h3>{character.name}</h3>

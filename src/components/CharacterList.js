@@ -12,7 +12,6 @@ export default function CharacterList() {
     axios.get('https://rickandmortyapi.com/api/character/')
         .then(res => {
           setContent(res.data);
-          console.log(res);
         });
   }, []); // we don't need any dependencies for this
 
@@ -23,4 +22,4 @@ export default function CharacterList() {
         {content.results.map(c => <CharacterCard key={c.name} character={c} />)}
       </section>
   );
-} 
+}
